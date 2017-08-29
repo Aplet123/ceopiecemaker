@@ -174,7 +174,7 @@ li::before,
   font-family: monospac, evermono;
   font-size: 17px;
   line-height: 0;
-  word-break: break-word;
+  word-break: break-all;
   box-sizing: border-box;
   padding-top: 5px;
   cursor: default;
@@ -320,7 +320,7 @@ div.passives{
 .screen.passives, div.passives::after, div.passives:focus, #passives li,
 #action li::after{
   content: attr(data-description);
-  word-wrap:break-word;
+  word-break: break-all;
   font-size: 12px;
   font-family: Consolis, monospac;
   font-weight: bold;
