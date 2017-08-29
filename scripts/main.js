@@ -535,7 +535,7 @@ function screensave() {
 
     var $b = $("#boards").clone();
     // Insert all available color codes
-    _.forEach(Array.prototype.slice.call(style.sheet.cssRules), function(item) { $b.find("#style style")[1].innerHTML += item.cssText; });
+    _.forEach(Array.prototype.slice.call(style.sheet.cssRules), function(item) { $b.find("#style style")[0].innerHTML += item.cssText; });
     // remove controls
     $b.find("#controls").remove();
 
