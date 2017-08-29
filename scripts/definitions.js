@@ -228,12 +228,11 @@ MOVES = [{
 }, {
     "id": "18",
     "cat": "official",
-    "name": "sorcer",
-    "long": "3]",
-    "text": "[Pay 3] .",
-    "color": [255, 0, 0],
-    "color2": [127, 0, 0],
-    "content": "\uffec",
+    "name": "warp",
+    "long": "b]mz:move/attack",
+    "text": "(Unstoppable) Move or attack.",
+    "color": [200, 151, 24],
+    "content": "",
     "hide": true
 }, {
     "id": "19",
@@ -567,7 +566,7 @@ MOVES = [{
     "cat": "variation",
     "name": "protosorcerattack",
     "long": "3cs]ru:sorcerize#flag@2(2(RANGE)/@+(mu:attack))",
-    "text": "[Pay 3]: (Magic) Sorcerize target, making them prone to melee attack from any casterâ€™s ally piece in Range 2, for 2 turns.",
+    "text": "[Pay 3]: (Magic) Sorcerize target, making them prone to melee attack from any caster's ally piece in Range 2, for 2 turns.",
     "color": [255, 0, 0],
     "color2": [0, 0, 0],
     "content": "\uffec",
