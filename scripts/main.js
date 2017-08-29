@@ -743,12 +743,13 @@ function restoreMoves() {
     $("td").each(function() { this.className = this.className == "piece" ? "piece" : ""; });
     $("section").each(function() {
         var level = this.id;
-        _.forEach(Object.keys(DATA[level].moves), function (id) {
+        var self = this;
+        Object.keys(DATA[level].moves).forEach(function (id) {
             var cname = MOVES[IMOVE[id]].name,
                 poses = _.map((DATA[level].moves[id].match(/../g) || []), function (poss) { return parseInt(poss[0], 16) * 15 + parseInt(poss[1], 16); });
             for (var n = 0; n < poses.length; n ++) {
                 poss = poses[n];
-                $(this).find("td")[poss].className = cname;
+                $(self).find("td")[poss].className = cname;
             }
         });
     });
