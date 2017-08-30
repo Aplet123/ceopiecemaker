@@ -958,16 +958,6 @@ MOVES = [{
     "content": "\u2300",
     "hide": true
 }, {
-    "id": "b3",
-    "cat": "ultrapretendlimitededition",
-    "name": "decimate",
-    "long": "c]ru:set@value=-3",
-    "text": "(Magic) Target loses 3 value. If unit has 3 value or less, destroy it instead.",
-    "color": [64, 0, 255],
-    "color2": [0, 0, 0],
-    "content": "\uFE63",
-    "hide": true
-}, {
     "id": "c1",
     "cat": "custom",
     "name": "custom1",
