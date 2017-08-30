@@ -753,6 +753,16 @@ MOVES = [{
     "content": "\u25ef\u25c7",
     "hide": true
 }, {
+    "id": "43b",
+    "cat": "variation",
+    "name": "rangedbeacon",
+    "long": "cu]rn:set@pos=Athis",
+    "text": "(Ranged) Target unit is teleported to Ability Target.",
+    "color": [155, 20, 208],
+    "color2": [255, 255, 255],
+    "content": "\u2316",
+    "hide": true
+}, {
     "id": "44a",
     "cat": "variation",
     "name": "antigravity",
@@ -910,7 +920,7 @@ MOVES = [{
     "id": "a8",
     "cat": "adoption",
     "name": "backtech",
-    "long": "1cs]ru:flag@3(t]\\*ally?targeted?mn:move@1(AWAY))",
+    "long": "1cs]ru:*ally?flag@3(t]\\!ally?targeted?mn:move@1(AWAY))",
     "text": "[Pay 1]: (Magic) Back-tech unit, making them move 1 square in the opposite direction after targeting enemy for 3 turns.",
     "color": [127, 127, 191],
     "color3": [64, 64, 95],
