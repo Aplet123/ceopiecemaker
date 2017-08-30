@@ -72,7 +72,7 @@ for (var i = 0; i < MOVES.length; i++) { //there
 document.styleSheets[1] = style;
 
 // Define <li> for each move
-for (var i = 0; i < MOVES.length; i++) {
+for (var i = 0; i < MOVES.length; i+=2) {
     var className = MOVES[i].name;
     if (className.startsWith("custom")) className += " custom";
     if (MOVES[i].hide) className += " hide";
@@ -101,7 +101,7 @@ $("#action li").click(function() {
 setAction("moveattack");
 
 //Doubleclick custom to edit
-$("#action li.custom").on("dblclick taphold", function() { alert("fuck of james"); /*cusLoadEdit(this.classList[0]);*/ });
+$("#action li.custom").on("dblclick taphold", function() { alert("fuck off james"); /*cusLoadEdit(this.classList[0]);*/ });
 
 function cusLoadEdit(moves) {
     //declare every parameter because lolfunctions
@@ -494,9 +494,7 @@ $("#c").on("draw", function() {
 $("[mode=tools] a").mouseover(function() { $("#toolinfo").text(TOOLTIPS[this.id]); });
 
 // When the name changes, update the other names.
-$("#name").keyup(function() {
-    alert("NIO!");
-});
+// that feature doesn't exist now. boom.
 
 function deltaCost(level, delta) {
     DATA[level].cost += delta;
@@ -684,7 +682,10 @@ function toJSON(a) {
     return data;
 }
 
+var timeout;
 function validate(source) {
+    clearTimeout(timeout);
+    timeout = setTimeout(()=>validate(source),3000);
     try { //Tests:
         console.log(source);
         DATA = toJSON(source); //Syntax test
@@ -702,10 +703,7 @@ function saveImage() {
 
 function dirty() { return DATA; }
 
-var timeout;
 function restore() {
-    clearTimeout(timeout);
-    timeout = setTimeout(restore,3000);
     restoreName();
     restoreMoves();
     restoreDisplay();
