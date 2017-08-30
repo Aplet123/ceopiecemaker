@@ -495,10 +495,7 @@ $("[mode=tools] a").mouseover(function() { $("#toolinfo").text(TOOLTIPS[this.id]
 
 // When the name changes, update the other names.
 $("#name").keyup(function() {
-    dirty().name = this.textContent;
-    $("#plus .name").text(DATA.name + "+");
-    $("#plusplus .name").text(DATA.name + "++");
-    $("#plusplusplus .name").text(DATA.name + "+++");
+    alert("NIO!");
 });
 
 function deltaCost(level, delta) {
