@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
   <meta charset="utf-8">
-  <title>fuck off james</title>
+  <title>Chess Evolved Online Piece Maker</title>
   <script src="scripts/paper.js"></script>
   <script src="scripts/sketch.js"></script>
   <script src="scripts/rasterizeHTML.allinone.js"></script>
@@ -22,7 +22,7 @@
   <div id="contents">
     <section id="base">
       <canvas id="c" class="c" width="181" height="127" style="-webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 201.979px; height: 141.979px;"></canvas>
-      <div id="name" class="name" tabindex="1">james</div>
+      <div id="name" class="name" contenteditable="true" tabindex="1">PieceName</div>
       <table>
         <tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>
         </td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>
@@ -47,8 +47,8 @@
       <div>
 
         <ul id="moves" class="moves"></ul>
-        <div class="passives" tabindex="6"></div>
-        <div class="info">[<span class="rank">fuck</span>]-[<span class="faction">off</span>]-[<span class="rarity">james</span>]</div>
+        <div class="passives" contenteditable="" tabindex="6"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
       </div>
 
     </section>
@@ -56,7 +56,7 @@
 
 
       <canvas class="c mirror" data-shadow="rgb(201,38,249)" width="200" height="140"></canvas>
-      <div class="name">stop</div>
+      <div class="name">PieceName+</div>
 
       <table>
         <tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>
@@ -82,15 +82,15 @@
       <div>
         <ul class="moves">
 </ul>
-        <div class="passives" tabindex="7"></div>
-        <div class="info">[<span class="rank">fuck</span>]-[<span class="faction">off</span>]-[<span class="rarity">james</span>]</div>
+        <div class="passives" contenteditable="" tabindex="7"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
       </div>
 
     </section>
     <section id="plusplus">
 
       <canvas class="c mirror" data-shadow="rgb(201,84,24)" width="200" height="140"></canvas>
-      <div class="name">forcing</div>
+      <div class="name">PieceName++</div>
 
       <table>
         <tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>
@@ -116,15 +116,15 @@
       <div>
         <ul class="moves">
 </ul>
-        <div class="passives" tabindex="8"></div>
-        <div class="info">[<span class="rank">fuck</span>]-[<span class="faction">off</span>]-[<span class="rarity">james</span>]</div>
+        <div class="passives" contenteditable="" tabindex="8"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
       </div>
 
     </section>
     <section id="plusplusplus">
 
       <canvas class="c mirror" data-shadow="rgb(252,13,57)" width="200" height="140"></canvas>
-      <div class="name">memes</div>
+      <div class="name">PieceName+++</div>
 
       <table>
         <tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>
@@ -150,76 +150,76 @@
       <div>
         <ul class="moves">
 </ul>
-        <div class="passives" tabindex="9"></div>
-        <div class="info">[<span class="rank">fuck off james</span>]-[<span class="faction">fuck off james</span>]-[<span class="rarity">fuck off james</span>]</div>
+        <div class="passives" contenteditable="" tabindex="9"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
       </div>
 
     </section>
     <div id="controls" class="panel">
       <div id="hidebutton"></div>
       <nav>
-        <a mode="active">fuck off james</a><a mode="passive">fuck off james</a><a mode="tools">fuck off james</a><a mode="share">fuck off james</a>
+        <a mode="active">Actions</a><a mode="passive">Passive</a><a mode="tools">Tools</a><a mode="share">Share</a>
       </nav>
       <div mode="share">
-    <button id="saveimage">fuck off james</button>
+    <button id="saveimage">Save Image to Computer</button>
     <div class="note">
-      <input id="savenoimage" type="checkbox">fuck off james
-      <input id="savenoinfo" type="checkbox">fuck off james<br>
-      <input id="savefirst" type="checkbox">fuck off james
-      <input id="savecompact" type="checkbox">fuck off james<br>
-      fuck off jamesfuck off jamesfuck off james<br>
-      fuck off jamesfuck off jamesfuck off james<br>
-      you too stratyoutoo strat youtoostrat</div><hr>
-    <div class="note"><button id="exj">fuck off james</button><button id="exjh">fuck off james</button><button id="imj">fuck off james</button><br><textarea id="code" cols="36" rows="4"></textarea></div>
+      <input id="savenoimage" type="checkbox">Hide image
+      <input id="savenoinfo" type="checkbox">Hide categories<br>
+      <input id="savefirst" type="checkbox">First Tier only
+      <input id="savecompact" type="checkbox">Compact View<br>
+      Note: Not all features are supported<br>
+      by all browsers. Confirmed working<br>
+      on Chrome, Firefox, and Opera.</div><hr>
+    <div class="note"><button id="exj">Export</button><button id="exjh">Export as URL</button><button id="imj">Import</button><br><textarea id="code" cols="36" rows="4"></textarea></div>
   </div>
   <div mode="tools">
-    fuck off jamesfuck off james
-    <div class="left">fuck off james</div>
+    Drawing Tools
+    <div class="left">Tool Size</div>
       <nav>
-        <a id="ts0" href="#c" data-size="2">fuck off james</a>
-        <a id="ts1" href="#c" data-size="3">fuck off james</a>
-        <a id="ts2" href="#c" data-size="5">fuck off james</a>
+        <a id="ts0" href="#c" data-size="2">Thin</a>
+        <a id="ts1" href="#c" data-size="3">Medium</a>
+        <a id="ts2" href="#c" data-size="5">Thick</a>
         <a id="ts3" href="#c" data-size="10">Rly Thick</a>
       </nav>
-    <div class="left">james's penises</div>
+    <div class="left">Fill Color (Shape only)</div>
       <nav>
         <a id="tf0" href="#c" data-fill="0">Base</a>
         <a id="tf1" href="#c" data-fill="1">Support</a>
         <a id="tf2" href="#c" data-fill="2">Head</a>
         <a id="tf3" href="#c" data-fill="3">Grey</a>
       </nav>    
-    <div class="left">fuck off james</div>
+    <div class="left">Tool Type</div>
       <nav>
-        <a id="tt0" href="#c" data-tool="marker">fuck off james</a>
-        <a id="tt1" href="#c" data-tool="line">fuck off james</a>
-        <a id="tt2" href="#c" data-tool="vector">fuck off james</a>
+        <a id="tt0" href="#c" data-tool="marker">Marker</a>
+        <a id="tt1" href="#c" data-tool="line">Line</a>
+        <a id="tt2" href="#c" data-tool="vector">Path</a>
       </nav>
       <nav>
-        <a id="tt3" href="#c" data-tool="eraser">fuck off james</a>
-        <a id="tt4" href="#c" data-tool="leraser">fuck off james</a>
-        <a id="tt5" href="#c" data-tool="vshape">fuck off james</a>
+        <a id="tt3" href="#c" data-tool="eraser">Eraser</a>
+        <a id="tt4" href="#c" data-tool="leraser">Line Eraser</a>
+        <a id="tt5" href="#c" data-tool="vshape">Shape</a>
       </nav>
-    <div class="left">fuck off james</div>
+    <div class="left">Operations</div>
       <nav>
-        <a id="do0" href="#c" data-operation="undo">fuck off james</a>
-        <a id="do1" href="#c" data-operation="redo">fuck off james</a>
-        <a id="do2" href="#c" data-download="png">fuck off james</a>
+        <a id="do0" href="#c" data-operation="undo">Undo</a>
+        <a id="do1" href="#c" data-operation="redo">Redo</a>
+        <a id="do2" href="#c" data-download="png">Download</a>
       </nav>
       <nav>
-        <a id="do3" href="#c" data-operation="clear">fuck off james</a>
+        <a id="do3" href="#c" data-operation="clear">Clear</a>
       </nav>
     <div class="hintwrap">
-      <div class="round panel hint" id="toolinfo">fuck off james!</div>
+      <div class="round panel hint" id="toolinfo">Mouse over Tools for descriptions!</div>
     </div>
   </div>
   <div mode="active">
-    <button id="shactive">Show Pretend James Shit</button>
+    <button id="shactive">Show Unused/Unofficial</button>
     <ul id="action" class="moves gallery">
 </ul>
   </div>
   <div mode="passive">
     <ul id="passives">
-      <li class="ctrl" id="ctrlclear">CLICK THIS PLEASE(Clear All)</li>
+      <li class="ctrl" id="ctrlclear">(Clear All)</li>
     </ul>
   </div>
 </div>
