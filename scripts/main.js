@@ -616,7 +616,7 @@ function toCSV() {
             case "number":
                 return a + "";
             case "string":
-                return a.replace(/\\/g, "\\b").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/:/g, "\\:");
+                return a.replace(/\\/g, "\\b").replace(/\n/g, "\\n").replace(/,/g, "\\a").replace(/:/g, "\\o");
             case "object":
                 if (a.constructor == Array)
                     return a.map((t) => ep(t)) + "";
