@@ -218,6 +218,9 @@ li.active {
   padding: 1px !important;
   background: rgb(204, 204, 204) none repeat scroll 0% 0%;
 }
+li.custom {
+	word-break: break-all;
+}
 li.custom.active{
   background: rgb(255, 255, 204) none repeat scroll 0% 0%;
 }
@@ -320,7 +323,7 @@ div.passives{
 .screen.passives, div.passives::after, div.passives:focus, #passives li,
 #action li::after{
   content: attr(data-description);
-  word-break: break-all;
+  overflow-wrap: break-word;
   font-size: 12px;
   font-family: Consolis, monospac;
   font-weight: bold;
