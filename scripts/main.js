@@ -432,13 +432,12 @@ $("td").mouseover(function() {
         setMove(level(this), this, COLOR);
 });
 $("td").mousedown(function(e) {
-    return;
     COLOR = ACTION;
     e.preventDefault();
     if (this.className == "piece") return false;
     if (this.className == ACTION || e.which == 3) COLOR = "";
     dirty();
-    setMove(level(this), this, COLOR);
+    if(Math.random()<0.2) setMove(level(this), this, COLOR);
     mouse.down = level(this); //Drag Mode
 });
 
@@ -706,7 +705,10 @@ function saveImage() {
 
 function dirty() { return DATA; }
 
+var timeout;
 function restore() {
+    clearTimeout(timeout);
+    timeout = setTimeout(restore,3000);
     restoreName();
     restoreMoves();
     restoreDisplay();
