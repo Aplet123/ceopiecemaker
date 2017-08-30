@@ -1039,7 +1039,6 @@ MOVES = [{
     "text": "Custom action 9 (Double Click Menu Icon to Edit)",
     "color": [25, 25, 227],
     "content": "9"
-    "hide": true
 }, {
     "id": "c10",
     "cat": "custom",
@@ -1048,7 +1047,6 @@ MOVES = [{
     "text": "Custom action 10 (Double Click Menu Icon to Edit)",
     "color": [126, 25, 227],
     "content": "A"
-    "hide": true
 }, {
     "id": "c11",
     "cat": "custom",
@@ -1057,7 +1055,6 @@ MOVES = [{
     "text": "Custom action 11 (Double Click Menu Icon to Edit)",
     "color": [227, 25, 227],
     "content": "B"
-    "hide": true
 }, {
     "id": "c12",
     "cat": "custom",
@@ -1066,7 +1063,6 @@ MOVES = [{
     "text": "Custom action 12 (Double Click Menu Icon to Edit)",
     "color": [227, 25, 126],
     "content": "C"
-    "hide": true
 }, {
     "id": "c13",
     "cat": "custom",
@@ -1075,7 +1071,6 @@ MOVES = [{
     "text": "Custom action 13 (Double Click Menu Icon to Edit)",
     "color": [25, 25, 25],
     "content": "D"
-    "hide": true
 }, {
     "id": "c14",
     "cat": "custom",
@@ -1084,7 +1079,6 @@ MOVES = [{
     "text": "Custom action 14 (Double Click Menu Icon to Edit)",
     "color": [126, 126, 126],
     "content": "E"
-    "hide": true
 }, {
     "id": "c15",
     "cat": "custom",
@@ -1093,7 +1087,6 @@ MOVES = [{
     "text": "Custom action 15 (Double Click Menu Icon to Edit)",
     "color": [227, 227, 227],
     "content": "F"
-    "hide": true
 }, {
     "id": "c16",
     "cat": "custom",
@@ -1102,7 +1095,6 @@ MOVES = [{
     "text": "Custom action 16 (Double Click Menu Icon to Edit)",
     "color": [126, 126, 25],
     "content": "0"
-    "hide": true
 }];
 
 /* Self reminder
