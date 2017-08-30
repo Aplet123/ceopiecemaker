@@ -29,7 +29,7 @@
  **
  ** Bracket Notation Explanation:
  * m/r: Melee / Magic (ranged)
- * n/u/z: Normal / Unblockable / Unstoppable
+ * f/n/u/z: Fragile / Normal / Unblockable / Unstoppable
  */
 
 // Description structure explanation:
@@ -59,7 +59,7 @@ LTE = ["meleedeath", "death", "start", "end", "status", "targeted"];
 // Especially those requiring more complex explanation.
 // Current listed items:
 // (RANDOM), (ENCHANT), (CAN-REVIVE), (RANGE), (AWAY), (KING), (LOSEABILITY),
-// (MOVETOGETHER), (RANDOMMINION), (LOSEIMMUNE), (REFLECT), 
+// (MOVETOGETHER), (RANDOMMINION), (LOSEIMMUNE), (REFLECT), (REMOVE), (EXILE)
 //
 // #Away: # Square away from the caster, if unspecified, assume infinity.
 // #Range: Squares of range #, if unspecified, assume 1.
@@ -352,7 +352,7 @@ MOVES = [{
     "cat": "official",
     "name": "teleportswap",
     "long": "b]mu:move/swap",
-    "text": "(Unblockable) Teleport or Swap places with an Ally.",
+    "text": "(Unblockable) Teleport or swap places with an Ally.",
     "color": [121, 19, 153],
     "color3": [0, 0, 0],
     "content": "\u{1f5d8}"
@@ -838,7 +838,6 @@ MOVES = [{
     "long": "b]mz:move/attack",
     "text": "(Unstoppable) Move or Attack.",
     "color": [200, 151, 24],
-    "content": "",
     "hide": true
 }, {
     "id": "a1",
@@ -863,7 +862,7 @@ MOVES = [{
     "cat": "adoption",
     "name": "levitate",
     "long": "s]ru:flag@2-((mn:attack)/\\mn:attack)",
-    "text": "(Magic) Levitate unit for 2 turns, making them to use or be targeted by normal Attacks.",
+    "text": "(Magic) Levitate unit for 2 turns, making them unable to use or be targeted by normal Attacks.",
     "color": [121, 19, 153],
     "color3": [255, 255, 0],
     "content": "^",
@@ -911,8 +910,8 @@ MOVES = [{
     "id": "a8",
     "cat": "adoption",
     "name": "backtech",
-    "long": "1cs]ru:flag@3(t]\\!ally?targeted?mn:move@1(AWAY))",
-    "text": "[Pay 1]: (Magic) Back-tech enemy unit, making them move 1 square in the opposite direction after targeting enemy for 3 turns.",
+    "long": "1cs]ru:flag@3(t]\\*ally?targeted?mn:move@1(AWAY))",
+    "text": "[Pay 1]: (Magic) Back-tech unit, making them move 1 square in the opposite direction after targeting enemy for 3 turns.",
     "color": [127, 127, 191],
     "color3": [64, 64, 95],
     "content": "\u25cc",
@@ -926,6 +925,16 @@ MOVES = [{
     "color": [0, 101, 24],
     "color2": [255, 255, 255],
     "content": "\u2747",
+    "hide": true
+}, {
+    "id": "b1",
+    "cat": "ultrapretendlimitededition",
+    "name": "annihilate",
+    "long": "c]rz:(REMOVE)",
+    "text": "(Invocation) Annihilate target.",
+    "color": [200, 200, 200],
+    "color3": [253, 117, 34],
+    "content": "*",
     "hide": true
 }, {
     "id": "c1",
@@ -1047,6 +1056,14 @@ MOVES = [{
     "text": "Custom action 15 (Double Click Menu Icon to Edit)",
     "color": [227, 227, 227],
     "content": "F"
+}, {
+    "id": "c16",
+    "cat": "custom",
+    "name": "custom16",
+    "long": "z]",
+    "text": "Custom action 16 (Double Click Menu Icon to Edit)",
+    "color": [126, 126, 25],
+    "content": "0"
 }];
 
 /* Self reminder
