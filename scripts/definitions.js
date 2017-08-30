@@ -127,7 +127,7 @@ MOVES = [{
     "cat": "official",
     "name": "jumpswap",
     "long": "b]mu:move/attack/swap",
-    "text": "(Unblockable) Move, Attack or Swap places with ally.",
+    "text": "(Unblockable) Move, Attack or swap places with ally.",
     "color": [255, 210, 0]
 }, {
     "id": "6",
@@ -226,14 +226,15 @@ MOVES = [{
     "content": "\ufe56\u2747",
     "hide": true
 }, {
-    "id": "18",
-    "cat": "official",
-    "name": "warp",
-    "long": "b]mz:move/attack",
-    "text": "(Unstoppable) Move or attack.",
-    "color": [200, 151, 24],
-    "content": "",
-    "hide": true
+   "id": "18",
+   "cat": "official",
+   "name": "sorcer",
+   "long": "3]",
+   "text": "[Pay 3] .",
+   "color": [255,0,0],
+   "color2": [127,0,0],
+   "content": "\uffec",
+   "hide": true
 }, {
     "id": "19",
     "cat": "official",
@@ -360,7 +361,7 @@ MOVES = [{
     "cat": "official",
     "name": "lifestone",
     "long": "cp]ru:summon@(CAN-REVIVE)&thisattack",
-    "text": "(Magic) Revive most recently fallen ally champion of value 2x this unitâ€™s value or less, and destroy this unit.",
+    "text": "(Magic) Revive most recently fallen ally champion of value 2x this unit's value or less, and destroy this unit.",
     "color": [0, 0, 0],
     "color2": [58, 233, 93],
     "content": "\uea41"
@@ -829,6 +830,15 @@ MOVES = [{
     "long": "b]mu:move/*ally?swap",
     "text": "(Unblockable) Teleport or swap places with unit.",
     "color": [19, 121, 153],
+    "hide": true
+}, {
+    "id": "32b",
+    "cat": "limbo",
+    "name": "warp",
+    "long": "b]mz:move/attack",
+    "text": "(Unstoppable) Move or Attack.",
+    "color": [200, 151, 24],
+    "content": "",
     "hide": true
 }, {
     "id": "a1",
