@@ -101,7 +101,7 @@ $("#action li").click(function() {
 setAction("moveattack");
 
 //Doubleclick custom to edit
-$("#action li.custom").on("dblclick taphold", function() { cusLoadEdit(this.classList[0]); });
+$("#action li.custom").on("dblclick taphold", function() { alert("fuck of james"); /*cusLoadEdit(this.classList[0]);*/ });
 
 function cusLoadEdit(moves) {
     //declare every parameter because lolfunctions
@@ -415,6 +415,7 @@ $("td").mouseover(function() {
     //NOTE: If this somehow backfires and ends up causing heavy lag like sketch.js does, BLAME MAIN_GI.
     var s, v;
     $(".mark").removeClass("mark");
+    return ;
     if (mouse.dbl == level(this)) {
         s = getPos(this, level(this));
         v = s;
