@@ -4,7 +4,7 @@ if (window.location.search && URLSearchParams) {
     if (qS.has("q")) $("#code").val(qS.get("q"));
     if (qS.has("c")) {
         var i;
-        for (i = 17; i <= +qS.get("c"); i++) {
+        for (i = 9; i <= +qS.get("c"); i++) {
             MOVES.push({
                 "name": "custom" + i,
                 "id": "c" + i,
@@ -72,7 +72,7 @@ for (var i = 0; i < MOVES.length; i++) { //there
 document.styleSheets[1] = style;
 
 // Define <li> for each move
-for (var i = 0; i < MOVES.length; i+=2) {
+for (var i = 0; i < MOVES.length; i++) {
     var className = MOVES[i].name;
     if (className.startsWith("custom")) className += " custom";
     if (MOVES[i].hide) className += " hide";
@@ -101,7 +101,7 @@ $("#action li").click(function() {
 setAction("moveattack");
 
 //Doubleclick custom to edit
-$("#action li.custom").on("dblclick taphold", function() { alert("fuck off james"); /*cusLoadEdit(this.classList[0]);*/ });
+$("#action li.custom").on("dblclick taphold", function() { cusLoadEdit(this.classList[0]); });
 
 function cusLoadEdit(moves) {
     //declare every parameter because lolfunctions
@@ -415,7 +415,6 @@ $("td").mouseover(function() {
     //NOTE: If this somehow backfires and ends up causing heavy lag like sketch.js does, BLAME MAIN_GI.
     var s, v;
     $(".mark").removeClass("mark");
-    return ;
     if (mouse.dbl == level(this)) {
         s = getPos(this, level(this));
         v = s;
@@ -437,7 +436,7 @@ $("td").mousedown(function(e) {
     if (this.className == "piece") return false;
     if (this.className == ACTION || e.which == 3) COLOR = "";
     dirty();
-    if(Math.random()<0.2) setMove(level(this), this, COLOR);
+    setMove(level(this), this, COLOR);
     mouse.down = level(this); //Drag Mode
 });
 
@@ -494,7 +493,12 @@ $("#c").on("draw", function() {
 $("[mode=tools] a").mouseover(function() { $("#toolinfo").text(TOOLTIPS[this.id]); });
 
 // When the name changes, update the other names.
-// that feature doesn't exist now. boom.
+$("#name").keyup(function() {
+    dirty().name = this.textContent;
+    $("#plus .name").text(DATA.name + "+");
+    $("#plusplus .name").text(DATA.name + "++");
+    $("#plusplusplus .name").text(DATA.name + "+++");
+});
 
 function deltaCost(level, delta) {
     DATA[level].cost += delta;
@@ -682,10 +686,7 @@ function toJSON(a) {
     return data;
 }
 
-var timeout;
 function validate(source) {
-    clearTimeout(timeout);
-    timeout = setTimeout(()=>validate(source),3000);
     try { //Tests:
         console.log(source);
         DATA = toJSON(source); //Syntax test
