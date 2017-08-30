@@ -432,6 +432,7 @@ $("td").mouseover(function() {
         setMove(level(this), this, COLOR);
 });
 $("td").mousedown(function(e) {
+    return;
     COLOR = ACTION;
     e.preventDefault();
     if (this.className == "piece") return false;
