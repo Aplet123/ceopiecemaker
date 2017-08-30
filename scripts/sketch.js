@@ -5,7 +5,7 @@ paper.install(window);
 (function($) {
 	var paperSketch;
 	sign = function(x) {
-		if (typeof x === "number") {
+		if (typeof x === "number" && x !== "null") {
 			if (x) {
 				if (x < 0) {
 					return -1;
@@ -157,6 +157,13 @@ paper.install(window);
 					this.undone = [];
 					this.unpath = [];
 					project.clear();
+					break;
+				default:
+					this.actions = ["set"+this.size+this.color+this.fill+this.tool];
+					this.undone = [];
+					this.unpath = [];
+					project.clear();
+					break;
 			}
 			return this.canvas.triggerHandler("draw");
 		};
