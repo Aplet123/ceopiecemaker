@@ -1121,8 +1121,8 @@ PASSIVES = ["Does not block movement.",
     "(Ranged-Immune)",
     "(Magic-Immune)",
     "(Status-Immune)",
-    "(Trigger-Immune)"
-    "(Reaction-Immune)"
+    "(Trigger-Immune)",
+    "(Reaction-Immune)",
     "(Location-Immune)"
 ];
 LABELS = {
