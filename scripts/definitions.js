@@ -1137,9 +1137,9 @@ PASSIVES = ["Does not block movement.",
     "(Location-Immune)"
 ];
 LABELS = {
-    rank: ["Minion", "Champion"],
-    faction: ["Basic", "Clan", "Arcane", "Forest"],
-    rarity: ["Common", "Rare", "Epic", "Legendary"]
+    rank: ["Minion", "Champion", "Boss", "Capymon"],
+    faction: ["Basic", "Clan", "Arcane", "Forest", "AG", "Ubers", "OU", "UU", "NU", "RU", "PU"],
+    rarity: ["Common", "Rare", "Epic", "Legendary", "Ultra Beast"]
 }
 LEVELS = ["base", "plus", "plusplus", "plusplusplus"];
 
