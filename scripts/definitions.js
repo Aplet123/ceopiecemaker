@@ -850,6 +850,22 @@ MOVES = [{
     "color": [200, 151, 24],
     "hide": true
 }, {
+    "id": "33b",
+    "cat": "limbo",
+    "name": "fly",
+    "long": "b]mz:move",
+    "text": "(Unstoppable) Fly.",
+    "color": [0, 255, 200],
+    "hide": true
+}, {
+    "id": "34b",
+    "cat": "limbo",
+    "name": "warpswap",
+    "long": "b]mz:move/attack/swap",
+    "text": "(Unstoppable) Move, Attack or swap places with ally.",
+    "color": [210, 210, 255],
+    "hide": true
+}, {
     "id": "a1",
     "cat": "adoption",
     "name": "flirt",
@@ -1024,7 +1040,7 @@ MOVES = [{
     "long": "bv]:block@(**:*)&(LOSEABILTY)/(mn:move/attack)",
     "text": "(Passive) Block one attack or ability from this location, and lose this ability. \n(Active) Move or Attack.",
     "color": [0, 0, 0],
-    "color3": [0, 255, 255],
+    "color3": [255, 255, 0],
     "content": "\u2219",
     "hide": true
 }, {
