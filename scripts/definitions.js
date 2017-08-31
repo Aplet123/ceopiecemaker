@@ -1014,7 +1014,8 @@ MOVES = [{
     "long": "cs]ru:sorcerize#flag@3(@+(move:attack))",
     "text": "(Magic) Sorcerize target, allowing them to be attacked by Move for 3 turns.",
     "color": [0, 0, 255],
-    "color2": [255, 255, 255],
+    "color2": [0, 0, 127],
+    "content": "\uffec",
     "hide": true
 }, {
     "id": "b9",
