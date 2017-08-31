@@ -496,3 +496,7 @@ nav {
 .cost, .name {
   height: 20px;
 }
+.vertical-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
