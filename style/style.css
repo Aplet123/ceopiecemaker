@@ -219,7 +219,7 @@ li.active {
   background: rgb(204, 204, 204) none repeat scroll 0% 0%;
 }
 li.custom {
-	word-break: break-all;
+	overflow-wrap: break-word;
 }
 li.custom.active{
   background: rgb(255, 255, 204) none repeat scroll 0% 0%;
