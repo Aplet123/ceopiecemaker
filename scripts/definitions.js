@@ -588,7 +588,7 @@ MOVES = [{
     "cat": "variation",
     "name": "protosorcerenchant",
     "long": "2cs]ru:sorcerize#flag@2(t]:death?enchant#flag@2(ENCHANT))",
-    "text": "[Pay 2]: (Magic) Sorcerize target, making them enchant attacker on Death in 2 turns.",
+    "text": "[Pay 2]: (Magic) Sorcerize target for 2 turns, making them enchant attacker on Death for 2 turns.",
     "color": [0, 178, 255],
     "color2": [0, 0, 0],
     "color3": [0, 255, 255],
@@ -850,6 +850,22 @@ MOVES = [{
     "color": [200, 151, 24],
     "hide": true
 }, {
+    "id": "33b",
+    "cat": "limbo",
+    "name": "fly",
+    "long": "b]mz:move",
+    "text": "(Unstoppable) Fly.",
+    "color": [0, 255, 200],
+    "hide": true
+}, {
+    "id": "34b",
+    "cat": "limbo",
+    "name": "warpswap",
+    "long": "b]mz:move/attack/swap",
+    "text": "(Unstoppable) Move, Attack or swap places with ally.",
+    "color": [210, 210, 255],
+    "hide": true
+}, {
     "id": "a1",
     "cat": "adoption",
     "name": "flirt",
@@ -977,6 +993,66 @@ MOVES = [{
     "color2": [0, 127, 127],
     "color3": [0, 255, 255],
     "content": "\u0058\u2219",
+    "hide": true
+}, {
+    "id": "b5",
+    "cat": "ultrapretendlimitededition",
+    "name": "hobble",
+    "long": "b]mf:move",
+    "text": "(Fragile) Move only.",
+    "color": [0, 0, 255],
+    "color2": [255, 255, 255],
+    "hide": true
+}, {
+    "id": "b6",
+    "cat": "ultrapretendlimitededition",
+    "name": "protosorcertarget",
+    "long": "s]ru:sorcerize#flag@3-!(target?!ally)",
+    "text": "(Magic) Sorcerize target, forcing them to target enemy units if they are capable of targeting any for 3 turns.",
+    "color": [255, 0, 0],
+    "color2": [0, 0, 0],
+    "content": "\u00d7",
+    "hide": true
+}, {
+    "id": "b7",
+    "cat": "ultrapretendlimitededition",
+    "name": "protosorcerdestroy",
+    "long": "cs]ru:sorcerize#flag@3(t]:targeted?block@(**:*)&thisattack)",
+    "text": "(Magic) Sorcerize target, causing them to be destroyed by any ability for 3 turns.",
+    "color": [0, 0, 255],
+    "color2": [0, 0, 0],
+    "content": "\uffec",
+    "hide": true
+}, {
+    "id": "b8",
+    "cat": "ultrapretendlimitededition",
+    "name": "protosorcerantienchant",
+    "long": "cs]ru:sorcerize#flag@3(@+(move:attack))",
+    "text": "(Magic) Sorcerize target, allowing them to be attacked by Move for 3 turns.",
+    "color": [0, 0, 255],
+    "color2": [0, 0, 127],
+    "content": "\uffec",
+    "hide": true
+}, {
+    "id": "b9",
+    "cat": "ultrapretendlimitededition",
+    "name": "omniblock",
+    "long": "bv]:block@(**:*)&(LOSEABILTY)/(mn:move/attack)",
+    "text": "(Passive) Block one attack or ability from this location, and lose this ability. \n(Active) Move or Attack.",
+    "color": [0, 0, 0],
+    "color3": [255, 255, 0],
+    "content": "\u2219",
+    "hide": true
+}, {
+    "id": "b10",
+    "cat": "ultrapretendlimitededition",
+    "name": "provoke",
+    "long": "bt]:start?\(m*:attack)",
+    "text": "(Trigger) Enemy Unit: At the start of your turn, target unit instantly attacks this unit.",
+    "color": [255, 255, 255],
+    "color2": [0, 0, 0],
+    "color3": [255, 255, 255],
+    "content": "\u25c7",
     "hide": true
 }, {
     "id": "c1",
@@ -1137,9 +1213,9 @@ PASSIVES = ["Does not block movement.",
     "(Location-Immune)"
 ];
 LABELS = {
-    rank: ["Minion", "Champion"],
-    faction: ["Basic", "Clan", "Arcane", "Forest"],
-    rarity: ["Common", "Rare", "Epic", "Legendary"]
+    rank: ["Minion", "Champion", "Boss", "King", "Capymon"],
+    faction: ["Basic", "Clan", "Arcane", "Forest", "AG", "Ubers", "OU", "UU", "NU", "RU", "PU"],
+    rarity: ["Common", "Rare", "Epic", "Legendary", "Ultra Beast"]
 }
 LEVELS = ["base", "plus", "plusplus", "plusplusplus"];
 
